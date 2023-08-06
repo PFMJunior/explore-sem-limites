@@ -1,0 +1,242 @@
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #F9F4FB;
+    padding-bottom: 5rem;
+}
+
+.top .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90%;
+
+    padding-left: 5rem;
+}
+
+.top .rightTop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.right .rightTop h1 {
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.rightTop p {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.right .vectorImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    width: 45px;
+    height: 85px;
+    transition: all 0.35s ease;
+}
+
+.right .vectorImage:hover {
+    filter: brightness(0.7);
+}
+
+.top .imageSpace {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backgroundGradient {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    background: var(--gradient-background);
+
+    padding: 3rem 5rem;
+}
+
+.backgroundGradient .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3rem;
+
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+
+    padding: 2rem;
+    width: 366px
+}
+
+.card .body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.body h3 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.body p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+
+    background-color: #F9F4FB;
+    padding-left: 5rem;
+}
+
+.contact .stars {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+form .inputItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 1rem;
+
+    padding: 0.7rem;
+    width: 100%;
+    
+}
+
+.inputItem input, textarea {
+    background-color: transparent;
+    border: 0;
+    
+    font-size: 1rem;
+
+    width: 100%;
+}
+
+form button {
+    background: var(--gradient-background);
+    border: 0;
+    border-radius: 1rem;
+
+    color: white;
+    cursor: pointer;
+    
+    font-size: 1rem;
+    font-weight: 400;
+
+    padding: 0.7rem 1rem;
+    transition: all 0.35s ease;
+}
+
+footer button:hover {
+    filter: brightness(0.9);
+}
+
+footer {
+    background: var(--gradient-background);
+
+    padding: 1rem;
+}
+
+footer p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .top .right {
+        align-items: center;
+        height: 100%;
+
+        padding-left: 2rem;
+    }
+    
+    
+    .right .rightTop h1 {
+        font-size: 2rem;
+    }
+    
+    .rightTop p {
+        font-size: 1.2rem;
+    }
+    
+    .right .vectorImage {
+        margin-top: 1rem;
+    }
+    
+    .backgroundGradient {
+        grid-template-columns: 1fr;
+    
+        padding: 3rem 2rem;
+    }
+    
+    .backgroundGradient .card {
+        width: 100%;
+    }
+    
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+    }
+    
+    .contact .stars {
+        display: none;
+    }
+    
+    .contact form {
+        gap: 1.2rem;
+    }
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --base-font: "Mulish", sans-serif;
+
+  --primary-color: #b52184;
+  --secondary-color: #312d64;
+
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+  font-family: Roboto;
+  font-size: 62.5%;
+  font-family: var(--base-font);
+}
